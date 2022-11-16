@@ -88,3 +88,35 @@ body {
     font-size: xx-large;
 
 }
+
+/* hero section */
+
+header {
+    background-image: url(../images/gradienta-gwE9vXSi7Xw-unsplash.jpg);
+    height: 12rem;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.subtitle {
+    background-color: var(--primary-clr);
+    width: 20rem;
+    margin-right: 15em;
+    margin-left:auto;
+    text-align: center;
+    color: darkgrey;
+
+}
+
+.grid-aboutme {
+    display: grid;
+    grid-gap: 1.2rem;
+    grid-template-areas: 
+    "aboutme-1 aboutme-2"
+    ;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
