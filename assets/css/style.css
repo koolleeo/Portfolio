@@ -254,3 +254,61 @@ header {
 .work-box h2, .work-box p {
     margin-bottom: 0.5rem;
 }
+
+/* footer */
+
+.grid-footer {
+    display: grid;
+    grid-gap: 1.2rem;
+    grid-template-columns: 300px 1fr ;
+    grid-template-areas: 
+    "contactme-1 contactme-2"
+}
+
+.contactme-1 {
+    grid-area: contactme-1;
+    border-right: 0.3rem solid var(--dark-clr);
+    width: 300px;
+    font-weight: bold;
+    color: var(--dark-clr);
+    margin-bottom: 1rem;
+}
+
+.contactme-2 {
+    grid-area: contactme-2;
+    border: 0.3rem solid var(--dark-clr);
+    color: var(--dark-clr);
+    margin-bottom: 1rem;
+}
+
+
+.contactme-2 ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.contactme-2 li {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--dark-clr);
+    padding: 0 2rem;
+
+}
+
+.contactme-2 a:hover {
+    color: var(--light-clr);
+    font-size: xx-large;
+
+}
+
+.contactme-1 h2 {
+    text-align: end;
+    margin-right: 1rem;
+    margin-top: 1rem;
+
+}
