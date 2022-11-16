@@ -141,3 +141,116 @@ header {
     margin-right: 1rem;
     margin-top: 1rem;
 }
+
+/* work section */
+
+.grid-work {
+    display: grid;
+    grid-gap: 1.2rem;
+    grid-template-columns: 300px 1fr 1fr;
+    grid-template-areas: 
+    "work-section-1 work-section-2 work-section-2"
+    "work-section-1 work-section-2 work-section-2"
+    "work-section-1 work-section-3 work-section-4"
+    "work-section-1 work-section-5 work-section-6"
+    ;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.work-section-1 {
+    grid-area: work-section-1;
+    border-right: 0.3rem solid var(--dark-clr);
+    width: 300px;
+    font-weight: bold;
+    color: var(--dark-clr);
+}
+
+.work-section-2 {
+    grid-area: work-section-2;
+    border: 1px solid black;
+    background-image: url(../images/carlos-muza-hpjSkU2UYSU-unsplash.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 30rem;
+
+}
+
+.work-section-3 {
+    grid-area: work-section-3;
+    border: 1px solid black;
+    background-image: url(../images/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 15rem;
+}
+
+.work-section-4 {
+    grid-area: work-section-4;
+    border: 1px solid black;
+    background-image: url(../images/markus-spiske-8OyKWQgBsKQ-unsplash.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 15rem;
+}
+
+.work-section-5 {
+    grid-area: work-section-5;
+    border: 1px solid black;
+    background-image: url(../images/pexels-fauxels-3184454.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 15rem;
+}
+
+.work-section-6 {
+    grid-area: work-section-6;
+    border: 1px solid black;
+    background-image: url(../images/pexels-thisisengineering-3861972.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 15rem;
+}
+
+.button {
+    background-color: var(--dark-clr);
+    color: var(--contrast-clr);
+    text-decoration: none;
+    border: 0;
+    padding: 0.6em 1.2em;
+}
+
+.work-section-1 h2 {
+    text-align: end;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.work-section-2 h2 {
+    background-color: var(--dark-clr);
+    color: var(--contrast-clr);
+    padding: 0.2rem;
+}
+
+.work-section-2 p {
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.work-box h4 {
+    margin-left: 5px;
+}
+
+.work-box {
+    border: 0.3rem solid var(--dark-clr);
+    color: var(--dark-clr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: var(--contrast-clr);
+}
+
+.work-box h2, .work-box p {
+    margin-bottom: 0.5rem;
+}
