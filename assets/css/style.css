@@ -312,3 +312,150 @@ header {
     margin-top: 1rem;
 
 }
+
+
+/* media queries */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+            height: 10rem;
+}
+
+}
+
+@media (max-width: 680px) {
+    .aboutme-1 {
+        width: 150px;
+    }
+    .aboutme-2 {
+        width: 150px;
+    }
+    .work-section-1 {
+        width: 150px;
+    }
+    .contactme-1 {
+        width: 150px;
+    }
+    .grid-work {
+        grid-template-columns: 150px 1fr 1fr;
+    }
+    .grid-footer {
+        grid-template-columns: 150px 1fr ;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .grid-work {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "work-section-1"
+        "work-section-2"
+        "work-section-3"
+        "work-section-4"
+        "work-section-5"
+        "work-section-6";
+    }
+
+    .contactme-2 ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-footer {
+        grid-template-areas: 
+        "contactme-1"
+        "contactme-2"
+        ;
+        grid-template-columns: 1fr;
+    }
+
+    .work-section-2
+    ,.work-section-3
+    ,.work-section-4
+    ,.work-section-5
+    ,.work-section-6 {
+        width: 80%;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+
+ 
+    .nav-list a {
+        font-size: 1em;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        margin: 1rem 0;
+
+    }
+    .aboutme-2 p {
+        overflow: hidden;
+    }
+
+    .grid-aboutme {
+        grid-template-areas: 
+        "aboutme-1"
+        "aboutme-2"
+        ;
+    }
+
+    .work-section-2
+    ,.work-section-3
+    ,.work-section-4
+    ,.work-section-5
+    ,.work-section-6 {
+        width: 70%;
+    }
+
+    .aboutme-2 {
+        width: 70%;
+    }
+
+    .logo {
+        padding: 0.8rem 1rem 0.8rem 1rem;
+        font-size: large;
+        width: 15rem;
+        
+    }
+
+    .navbar {
+        display: inline;  
+    }
+
+    .contactme-2 {
+        width: 24rem;
+    }
+
+    header {
+        height: 8rem;
+}
+}
+
+@media (max-width: 400px) {
+
+    .work-section-2
+    ,.work-section-3
+    ,.work-section-4
+    ,.work-section-5
+    ,.work-section-6
+    , .contactme-2 {
+        width: 60%;
+     
+    }
+    .aboutme-2 {
+        width: 60%;
+    }
+
+}
