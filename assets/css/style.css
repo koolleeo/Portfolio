@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap");
+
+/* define variables */
+
+:root {
+
+    --primary-clr: #624F82;
+    --dark-clr: #3F3B6C;
+    --light-clr: #9F73AB;
+    --contrast-clr: #A3C7D6;
+
+    --font-weight-400: 400;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    --font-weight-900: 900;
+
+}
+
+/* remove default boxmodel margin/padding */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+
+body {
+    font-family: "Vollkorn", serif;
+    /* box-sizing: border-box; */
+    outline: none;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+    background-color: var(--contrast-clr);
+
+}
+
+.wrapper {
+    display: grid;
+    height: 100vh;
+    margin: 1rem;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+}
+
+/* navbar */
+
+.navbar {
+    background-color: var(--dark-clr);
+    color: var(--contrast-clr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8rem;
+}
+
+.logo {
+    background-color: #624F82;
+    padding: 0.8rem 2rem 0.8rem 4rem;
+    font-size: x-large;
+ 
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.nav-list a {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--contrast-clr);
+    padding: 0 2rem;
+}
+
+.navbar a:hover {
+    color: var(--light-clr);
+    font-size: xx-large;
+
+}
