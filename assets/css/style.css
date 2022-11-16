@@ -120,3 +120,24 @@ header {
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
+
+
+.aboutme-1 {
+    grid-area: aboutme-1;
+    border-right: 0.3rem solid var(--dark-clr);
+    width: 300px;
+    font-weight: bold;
+    color: var(--dark-clr);
+}
+
+.aboutme-2 {
+    grid-area: aboutme-2;
+    color: var(--dark-clr);
+    font-size: 1rem;
+}
+
+.aboutme-1 h2 {
+    text-align: end;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
