@@ -33,7 +33,6 @@ html {
 
 body {
     font-family: "Vollkorn", serif;
-    /* box-sizing: border-box; */
     outline: none;
     font-size: 1rem;
     line-height: 1.6;
@@ -48,6 +47,24 @@ body {
     margin: 1rem;
 
 }
+
+/* shared utility */
+
+.section-intro {
+
+    border-right: 0.3rem solid var(--dark-clr);
+    width: 300px;
+    font-weight: bold;
+    color: var(--dark-clr);
+
+}
+
+.work-section {
+    border: 1px solid black;
+    width: 100%;
+    background-size: cover;
+}
+
 
 /* navbar */
 
@@ -124,10 +141,6 @@ header {
 
 .aboutme-1 {
     grid-area: aboutme-1;
-    border-right: 0.3rem solid var(--dark-clr);
-    width: 300px;
-    font-weight: bold;
-    color: var(--dark-clr);
 }
 
 .aboutme-2 {
@@ -160,55 +173,36 @@ header {
 
 .work-section-1 {
     grid-area: work-section-1;
-    border-right: 0.3rem solid var(--dark-clr);
-    width: 300px;
-    font-weight: bold;
-    color: var(--dark-clr);
 }
+
 
 .work-section-2 {
     grid-area: work-section-2;
-    border: 1px solid black;
     background-image: url(../images/carlos-muza-hpjSkU2UYSU-unsplash.jpg);
-    width: 100%;
-    background-size: cover;
     height: 30rem;
-
 }
 
 .work-section-3 {
     grid-area: work-section-3;
-    border: 1px solid black;
     background-image: url(../images/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
-    width: 100%;
-    background-size: cover;
     height: 15rem;
 }
 
 .work-section-4 {
     grid-area: work-section-4;
-    border: 1px solid black;
     background-image: url(../images/markus-spiske-8OyKWQgBsKQ-unsplash.jpg);
-    width: 100%;
-    background-size: cover;
     height: 15rem;
 }
 
 .work-section-5 {
     grid-area: work-section-5;
-    border: 1px solid black;
     background-image: url(../images/pexels-fauxels-3184454.jpg);
-    width: 100%;
-    background-size: cover;
     height: 15rem;
 }
 
 .work-section-6 {
     grid-area: work-section-6;
-    border: 1px solid black;
     background-image: url(../images/pexels-thisisengineering-3861972.jpg);
-    width: 100%;
-    background-size: cover;
     height: 15rem;
 }
 
@@ -249,6 +243,7 @@ header {
     justify-content: center;
     align-items: start;
     color: var(--contrast-clr);
+    
 }
 
 .work-box h2, .work-box p {
@@ -267,10 +262,6 @@ header {
 
 .contactme-1 {
     grid-area: contactme-1;
-    border-right: 0.3rem solid var(--dark-clr);
-    width: 300px;
-    font-weight: bold;
-    color: var(--dark-clr);
     margin-bottom: 1rem;
 }
 
@@ -330,16 +321,8 @@ header {
 }
 
 @media (max-width: 680px) {
-    .aboutme-1 {
-        width: 150px;
-    }
-    .aboutme-2 {
-        width: 150px;
-    }
-    .work-section-1 {
-        width: 150px;
-    }
-    .contactme-1 {
+
+    .aboutme-1, .work-section-1, .contactme-1 {
         width: 150px;
     }
     .grid-work {
@@ -348,6 +331,7 @@ header {
     .grid-footer {
         grid-template-columns: 150px 1fr ;
     }
+
 }
 
 
@@ -396,12 +380,7 @@ header {
         padding: 0 1rem;
     }
 
-    .logo {
-        margin: 1rem 0;
-
-    }
-
-    .logo h1 {
+      .logo h1 {
         font-size: 1.5rem;
     }
     .aboutme-2 p {
@@ -431,6 +410,7 @@ header {
         padding: 0.8rem 1rem 0.8rem 1rem;
         font-size: large;
         width: 15rem;
+        margin: 1rem 0;
         
     }
 
