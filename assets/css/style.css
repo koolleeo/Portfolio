@@ -243,6 +243,7 @@ header {
     justify-content: center;
     align-items: start;
     color: var(--contrast-clr);
+    cursor: pointer;
     
 }
 
