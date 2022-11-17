@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap);
 
 /* define variables */
 
@@ -46,7 +46,7 @@ body {
     display: grid;
     height: 100vh;
     margin: 1rem;
-    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+
 }
 
 /* navbar */
@@ -399,6 +399,10 @@ header {
     .logo {
         margin: 1rem 0;
 
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
     }
     .aboutme-2 p {
         overflow: hidden;
